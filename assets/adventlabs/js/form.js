@@ -57,6 +57,11 @@ loginForm.addEventListener('submit', (e) => {
         },
       ],
     };
+    doCORSRequest({
+      method: 'POST',
+      url: 'https://hooks.slack.com/services/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',
+      data: payload,
+    });
 
     name.value = '';
     company.value = '';
